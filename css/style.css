@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: lightgray;
+}
+
+/* NAVBAR SECTION */
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar ul li {
+    margin-right: 4px;
+}
+
+.nav-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+.nav-button:hover {
+    background-color: #45a049;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+      
+.nav-logo img {
+    width: 100%;
+    height: 50px;
+    margin: 0 10px;
+}
+      
+.nav-logo h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR END SECTION */
+
+/* MAIN SECTION */
+
+.title{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.fisrt-title{
+    margin-top: 10px;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.first-content{
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+}
+
+.first-content-card{
+    width: 60%;
+    margin-left: 5px;
+    background-color: rebeccapurple;
+}
+
+.second-content-card{
+    background-color: #45a049;
+    height: 100%;
+    width: 40%;
+    margin-left: 10px;
+    border-radius: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-content{
+    width: 100%;
+    height: 70%;
+    background: red;
+}
+
+.testimoni{
+    width: 100%;
+    height: 30%;
+    background-color: yellow;
+    margin-top: 10px;
+}
+
+.form{
+    background: blue;
+    margin: 30px;
+    width: 100%;
+}
+
+.input-form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: red;
+}
+
+.input-form input[type="text"]{
+    width: 100%;
+}
+/* MAIN END SECTION */
