@@ -1,6 +1,5 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: lightgray;
 }
 
 /* NAVBAR SECTION */
@@ -84,34 +83,51 @@ hr {
 .first-content-card{
     width: 60%;
     margin-left: 5px;
-    background-color: rebeccapurple;
+    padding-left: 10px;
 }
 
 .second-content-card{
-    background-color: #45a049;
+    background-color: rgb(237,240,244);
     height: 100%;
-    width: 40%;
+    width: 30%;
     margin-left: 10px;
     border-radius: 8%;
     display: flex;
     justify-content: center;
 }
 
+#card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+#card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 .img-content{
     width: 100%;
     height: 70%;
-    background: red;
+    border-radius: 50px 50px 0 0;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.img-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Menyembunyikan bagian dari gambar agar sesuai dengan ukuran parent */
 }
 
 .testimoni{
     width: 100%;
-    height: 30%;
-    background-color: yellow;
+    height: 26%;
+    border-radius: 8px;
+    border: 1px solid black;
     margin-top: 10px;
 }
 
 .form{
-    background: blue;
     margin: 30px;
     width: 100%;
 }
@@ -121,10 +137,19 @@ hr {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background: red;
 }
 
-.input-form input[type="text"]{
+.input-form input[type="text"],
+.input-form input[type="submit"], 
+.input-form input[type="email"] {
     width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.input-form textarea {
+    border: none;
+    border-radius: 10px;
 }
 /* MAIN END SECTION */
