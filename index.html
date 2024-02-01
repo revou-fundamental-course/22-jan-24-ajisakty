@@ -17,10 +17,10 @@
         </div>
         <div>
           <ul>
-            <li><button class="nav-button">Home</button></li>
-            <li><button class="nav-button">Testimoni</button></li>
-            <li><button class="nav-button">Our Product</button></li>
-            <li><button class="nav-button">Contact us</button></li>
+            <li><button class="nav-button"><a href="#title">Home</a></button></li>
+            <li><button class="nav-button"><a href="#testimoni">Testimoni</a></button></li>
+            <li><button class="nav-button"><a href="#product">Our Product</a></button></li>
+            <li><button class="nav-button"><a href="#contact">Contact Us</a></button></li>
           </ul>
         </div>
       </nav>
@@ -32,7 +32,7 @@
 
     <main>
       <!-- title -->
-      <div class="title">
+      <div class="title" id="title">
         <div class="first-title">
           <h1>The Best Building Shop In All Of Universe</h1>
         </div>
@@ -48,21 +48,21 @@
             <img src="assets/house.png" alt="">
           </div>
           <div class="testimoni">
-            <div class="comment" id="card-container"></div>
-
-              <!-- <div class="comment-item">
+            <div class="comment" id="card-container">
+              <div class="comment-item"  id="testimoni">
                 <div class="list-name">
                   <div class="img-profile">
                     <img src="assets/icon.png" alt="pp" style="width: 35px; height: 35px;">
                   </div>
                   <div class="name-profile">
-                    <span>Aji Sakti Ardiansyaasjdhajskdhkasjhdakjsdhajksdhh</span>
+                    <span id="displayName"></span>
                   </div>
                 </div>
                 <div class="comment-text">
-                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi debitis eligendi odit, ut inventore vel. Alias rem aliquid neque sed assumenda veritatis ad ab! Magnam minima nulla modi accusantium fugiat.</span>
+                  <span id="displayComment"></span>
                 </div>
-              </div> -->
+              </div>
+            </div>
           </div>
         </div>
         <div class="second-content-card" id="card">
@@ -78,7 +78,7 @@
               <input type="email" id="email">
               <label for="comment" style="margin-top: 10px; ">Comment</label>
               <textarea id="comment" cols="30" rows="5"></textarea>
-              <input type="submit" onclick="getValue();" value="Send" style="margin-top: 10px;">
+              <input type="submit" value="Send" onclick="getValue(event)" style="margin-top: 10px;">
             </form> 
             </div>
           </div>
@@ -157,7 +157,7 @@
       </div>
       <!-- End Branding -->
       <!-- Product -->
-      <div class="package">
+      <div class="package" id="product">
         <div class="package-title">
           <span>Our Product</span>
         </div>
@@ -197,16 +197,22 @@
         </div>
       </div>
       <!-- End Product -->
+      <!-- FOOTER -->
+      <footer>
+        <div class="contact" id="contact">
+          <p>Aji Sakti Ardiasnyah</p>
+          <a href="https://www.linkedin.com/in/aji-sakti-ardiansyah" style="text-decoration: none; color: black; width: 25px; height: 25;">
+            <img src="assets/linkedin.svg" alt="Linkedin" style="height: 25px; width: 25px;">
+          </a>
+          <a href="mailto:aji.sakty12323@gmail.com">
+            <img src="assets/gmail.svg" style="height: 25px; width: 25px;">
+          </a>            
+        </div>
+      </footer>
+      <!-- END FOOTER -->
     </main>
-
     <!-- MAIN SECTION -->
-    <p>Juragan Company</p>
-    <script src="js/script.js"></script>
-    <script>
-      document.getElementById('form').addEventListener("submit", function() {
-      let showDatas = getValue();
-      comment(showDatas);
-  });
+    <script src="js/script.js">
     </script>
   </body>
 </html>
